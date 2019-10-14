@@ -2,3 +2,5 @@ language: cpp
 compiler: gcc
 os: linux
 dist: bionic
+notification:
+  email: false
