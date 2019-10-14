@@ -19,7 +19,7 @@ all: $(BIN)/$(EXECUTABLE)
 clean:
 	$(RM) $(BIN)/$(EXECUTABLE)
 
-run: all
+test: all
 	./$(BIN)/$(EXECUTABLE)
 
 $(BIN)/$(EXECUTABLE): $(SRC)/*.cpp
