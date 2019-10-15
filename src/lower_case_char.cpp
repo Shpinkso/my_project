@@ -1,9 +1,9 @@
 //============================================================================
-// Name        : my_project.cpp
+// Name        : lower_clasee_char.cpp
 // Author      : Paul Blay
 // Version     :
-// Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
+// Copyright   : All your base are belong to us
+// Description : Very simple charactor class
 //============================================================================
 
 #include <iostream>
@@ -17,11 +17,6 @@
 #endif
 using namespace std;
 
-
-int multiply(int x, int y)
-{
-	return x*y;
-}
 #if 0
 class Haiku {
 	public:
