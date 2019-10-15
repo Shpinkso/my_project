@@ -1,7 +1,11 @@
 #define CATCH_CONFIG_MAIN
 #include "catch.hpp"
 #include "../include/lower_case_char.hpp"
+#include "../include/sentence.hpp"
 
+TEST_CASE("Syllable counting", "[get_syllable_count]") {
+	Sentence::Sentence test_sentence ("test string");
+}
 
 TEST_CASE("Checking for vowels", "[is_a_vowel]") {
 	char test_char = 'a';
