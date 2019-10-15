@@ -1,3 +1,16 @@
+This is my first attempt at writing c++.
+I've decided to hook it into travis, at which I am also a unashamed n00b.
+I'm going to be trying to create a Haiku checker, which is a cyberdojo challenge I give to interview candidates... so I ought to make sure I can do it myself (I've done it once before in plain C).
+I'm trying to use lessons learned from reading the first chapters of "Clean Code" - specifically, making the code readable.
+That means: well named, small functions.
+One more thing that I'm a complete n00d at is Catch2... I'm going to see if I can use the Gherkin style of testing as I understand there is some support.
+
+Will it turn out nice and easy to read with gorgeous behavioural tests? Will it be a nightmare to debug? Will I die trying?
+All of these may or may not be answered in this fun project.
+
+What's the Haiku challenge from cyberdojo? Go and take a look! www.cyberdojo.org
+If you are too lazy to click, read this:
+
 Haiku is an ancient form of Japanese poetry. A haiku
 is a three-line poem with seventeen syllables, where
 the first line must contain five syllables, the second
