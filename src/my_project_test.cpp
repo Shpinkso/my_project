@@ -36,6 +36,15 @@ TEST_CASE("Mix of captials ane lowercase", "[get_syllable_count]") {
 	REQUIRE(syllables == 3);
 }
 
+TEST_CASE("Count twice", "[get_syllable_count]") {
+	unsigned int syllables = 0;
+	Sentence test_sentence ("AaAbUiOccc  O");
+	syllables = test_sentence.get_syllable_count();
+	REQUIRE(syllables == 3);
+	syllables = test_sentence.get_syllable_count();
+	REQUIRE(syllables == 3);
+}
+
 TEST_CASE("Checking for vowels", "[is_a_vowel]") {
 	char test_char = 'a';
 	Lower_case_char this_char(test_char);
