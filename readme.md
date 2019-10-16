@@ -18,6 +18,8 @@ What's the Haiku challenge from cyberdojo? Go and take a look! www.cyberdojo.org
 
 If you are too lazy to click, read this:
 
+What is Haiku?
+--------------
 Haiku is an ancient form of Japanese poetry. A haiku
 is a three-line poem with seventeen syllables, where
 the first line must contain five syllables, the second
