@@ -1,5 +1,5 @@
-#ifndef HAIKU
-#define HAIKU
+#ifndef HAIKU_HPP
+#define HAIKU_HPP
 
 class Haiku {
 	public:

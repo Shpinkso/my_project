@@ -1,5 +1,5 @@
-#ifndef LOWER_CASE_CHAR
-#define LOWER_CASE_CHAR
+#ifndef LOWER_CASE_CHAR_HPP
+#define LOWER_CASE_CHAR_HPP
 
 class Lower_case_char{
 	public:

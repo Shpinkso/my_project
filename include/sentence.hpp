@@ -1,5 +1,5 @@
-#ifndef SENTENCE
-#define SENTENCE
+#ifndef SENTENCE_HPP
+#define SENTENCE_HPP
 #include <iostream>
 #define SYLLABLES_NOT_COUNTED -1
 
