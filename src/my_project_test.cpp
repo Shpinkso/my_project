@@ -5,9 +5,35 @@
 #include "../include/sentence.hpp"
 
 TEST_CASE("Syllable counting", "[get_syllable_count]") {
+	unsigned int syllables = 0;
 	Sentence test_sentence ("test string");
-	std::cout << test_sentence.sentence_str;
-	REQUIRE(1 == 1);
+	syllables = test_sentence.get_syllable_count();
+	REQUIRE(syllables == 2);
+}
+TEST_CASE("Rows of vowels", "[get_syllable_count]") {
+	unsigned int syllables = 0;
+	Sentence test_sentence ("aaabiieou");
+	syllables = test_sentence.get_syllable_count();
+	REQUIRE(syllables == 2);
+}
+TEST_CASE("No syllables", "[get_syllable_count]") {
+	unsigned int syllables = 0;
+	Sentence test_sentence ("rrrrrrrr");
+	syllables = test_sentence.get_syllable_count();
+	REQUIRE(syllables == 0);
+}
+TEST_CASE("Captials", "[get_syllable_count]") {
+	unsigned int syllables = 0;
+	Sentence test_sentence ("AAAbUIOccc  O");
+	syllables = test_sentence.get_syllable_count();
+	REQUIRE(syllables == 3);
+}
+
+TEST_CASE("Mix of captials ane lowercase", "[get_syllable_count]") {
+	unsigned int syllables = 0;
+	Sentence test_sentence ("AaAbUiOccc  O");
+	syllables = test_sentence.get_syllable_count();
+	REQUIRE(syllables == 3);
 }
 
 TEST_CASE("Checking for vowels", "[is_a_vowel]") {

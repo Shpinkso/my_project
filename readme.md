@@ -5,7 +5,7 @@ I've decided to hook it into travis, at which I am also an unashamed n00b.
 
 I'm going to be trying to create a Haiku checker, which is a cyberdojo challenge I give to interview candidates... so I ought to make sure I can do it myself (I've done it once before in plain C).
 
-I'm trying to use lessons learned from reading the first chapters of "Clean Code" - specifically, making the code readable.
+I'm trying to use lessons learned from reading the first chapters of "Clean Code" - specifically, making the code readable. THIS IS NOT OPTIMISED FOR EFFICIENCY!! =D I'm interested in where a suitable line is (if there is one) between optimised code and readable code. "Clean Code" suggests that the compiler will optimise everything for you... so we're going full-guns readable with terrible/non existent manual optimisation (an object for every charactor? Yes please!)
 
 This, in a nutshell, means: well named variables and small 'do one thing' functions.
 
