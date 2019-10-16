@@ -1,16 +1,15 @@
 #ifndef SENTENCE
 #define SENTENCE
-
-#include <string>
-
+#include <iostream>
 #define MAX_CHARACTORS 200
 
 class Sentence{
     public:
-        Sentence::Sentence(std::string str);
+        Sentence(std::string str);
         unsigned int get_syllable_count();
-    private:
         std::string sentence_str;
+    private:
+        
 };
 
 #if 0

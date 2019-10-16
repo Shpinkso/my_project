@@ -1,10 +1,13 @@
 #define CATCH_CONFIG_MAIN
 #include "catch.hpp"
+#include <iostream>
 #include "../include/lower_case_char.hpp"
 #include "../include/sentence.hpp"
 
 TEST_CASE("Syllable counting", "[get_syllable_count]") {
-	Sentence::Sentence test_sentence ("test string");
+	Sentence test_sentence ("test string");
+	std::cout << test_sentence.sentence_str;
+	REQUIRE(1 == 1);
 }
 
 TEST_CASE("Checking for vowels", "[is_a_vowel]") {

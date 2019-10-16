@@ -6,15 +6,16 @@
 // Description : Very simple sentence class
 //============================================================================
 
+#include <string>
+#include <iostream>
 #include "../include/sentence.hpp"
 #include "../include/lower_case_char.hpp"
 
-Sentence::Sentence(std::string str)
-            : sentence_str(str)
+Sentence::Sentence(std::string str) : sentence_str(str)
 {
 }
 
-unsigned int get_syllable_count()
+unsigned int Sentence::get_syllable_count()
 {
     return 0;
 }

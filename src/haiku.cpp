@@ -19,7 +19,7 @@
 
 char* Haiku::evaluate_haiku(char* haiku_attempt)
 {
-
+    return haiku_attempt;
 }
 
 
