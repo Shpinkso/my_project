@@ -1,7 +1,6 @@
 #ifndef SENTENCE_HPP
 #define SENTENCE_HPP
-#include <iostream>
-#define SYLLABLES_NOT_COUNTED -1
+
 
 enum char_type{
     vowel = 0,
@@ -20,12 +19,4 @@ class Sentence{
         void reset_iterator();
 };
 
-#if 0
-class Sentence {
-	public:
-		char sentence[MAX_CHARACTORS];
-        Sentence(char* text, unsigned int length);
-		void count_syllables();
-};
-#endif
 #endif

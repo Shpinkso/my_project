@@ -14,15 +14,10 @@
 Sentence::Sentence(std::string str) : sentence_str(str)
 {
     it = sentence_str.begin();
-    syllables = SYLLABLES_NOT_COUNTED;
 }
 
 unsigned int Sentence::get_syllable_count()
 {
-    if(syllables != SYLLABLES_NOT_COUNTED)
-    {
-        return syllables;
-    }
     syllables = 0;
     reset_iterator();
     Lower_case_char letter(*it);
