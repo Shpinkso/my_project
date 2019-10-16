@@ -3,13 +3,15 @@
 
 class Haiku {
 	public:
-		char* sentance_start;
-		char* sentance_end;
-		char output[LONGEST_OUTPUT_PER_HAIKU];
-		int syllables[MAX_LINES_PER_HAIKU];
+		Haiku(std::string str);
 		char* evaluate_haiku(char* haiku_attempt);
-		void count_sentance_syllables();
+		Sentence* get_next_sentence();
 		char* get_next_sentance();
-		void format_output();
+	private:
+		std::string haiku_str;
+		Sentence* current_sentence;
+		std::string haiku_output;
+		void append_syllable_to_output(unsigned int syllables);
+		void append_haiku_result_to_output(bool is_haiku);
 };
 #endif
