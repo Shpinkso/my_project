@@ -3,7 +3,7 @@
 // Author      : Paul Blay
 // Version     :
 // Copyright   : All your base are belong to us
-// Description : Very simple sentence class
+// Description : Using composition, add a syllable counter to the string class
 //============================================================================
 
 #include <string>
@@ -14,10 +14,16 @@
 Sentence::Sentence(std::string str) : sentence_str(str)
 {
     it = sentence_str.begin();
+    syllables = SYLLABLES_NOT_COUNTED;
 }
 
 unsigned int Sentence::get_syllable_count()
 {
+    if(syllables != SYLLABLES_NOT_COUNTED)
+    {
+        return syllables;
+    }
+    syllables = 0;
     reset_iterator();
     Lower_case_char letter(*it);
     bool at_a_vowel = letter.is_a_vowel();

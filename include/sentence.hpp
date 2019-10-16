@@ -1,7 +1,7 @@
 #ifndef SENTENCE
 #define SENTENCE
 #include <iostream>
-#define MAX_CHARACTORS 200
+#define SYLLABLES_NOT_COUNTED -1
 
 enum char_type{
     vowel = 0,
@@ -12,13 +12,12 @@ class Sentence{
     public:
         Sentence(std::string str);
         unsigned int get_syllable_count();
-        std::string sentence_str;
     private:
-        unsigned int syllables;
+        std::string sentence_str;
+        int syllables;
         std::string::iterator it;
         void skip_iterator_to_next(char_type type);
         void reset_iterator();
-        const char lower_case_vowels[6] = {'a','e','i','o','u','y'};
 };
 
 #if 0
