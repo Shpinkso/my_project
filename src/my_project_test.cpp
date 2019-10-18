@@ -3,6 +3,22 @@
 #include <iostream>
 #include "../include/lower_case_char.hpp"
 #include "../include/sentence.hpp"
+#include "../include/haiku.hpp"
+
+TEST_CASE("Readme Haiku 1", "[Haiku]") {
+	std::string result;
+	Haiku test_haiku("Computer programs/The bugs try to eat my code/I must not let them");
+	result = test_haiku.evaluate_haiku();
+	REQUIRE(result == "5,8,5,N");
+}
+
+TEST_CASE("Readme Haiku 2", "[Haiku]") {
+	std::string result;
+	Haiku test_haiku("happy purple frog/eating bugs in the marshes/get indigestion");
+	result = test_haiku.evaluate_haiku();
+	REQUIRE(result == "5,7,5,Y");
+}
+
 
 TEST_CASE("Syllable counting", "[get_syllable_count]") {
 	unsigned int syllables = 0;

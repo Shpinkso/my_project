@@ -4,14 +4,13 @@
 class Haiku {
 	public:
 		Haiku(std::string str);
-		char* evaluate_haiku(char* haiku_attempt);
-		Sentence* get_next_sentence();
-		char* get_next_sentance();
+		std::string evaluate_haiku();
 	private:
 		std::string haiku_str;
-		Sentence* current_sentence;
 		std::string haiku_output;
+		std::string poem_line;
+		void get_next_line();
 		void append_syllable_to_output(unsigned int syllables);
-		void append_haiku_result_to_output(bool is_haiku);
+		void append_haiku_result_to_output();
 };
 #endif
