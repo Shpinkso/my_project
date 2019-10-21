@@ -4,6 +4,37 @@
 #include "../include/sentence.hpp"
 #include "../include/haiku.hpp"
 
+
+/* So, we've learned that, in Catch2, BDD is not really what I was hoping for.
+   It doesn't offer a built in way to write the glue code and ensure that a
+   GIVEN/WHEN/THEN sentence always means the same thing. Perhaps cucumber-cpp
+   is the next place to look */
+SCENARIO( "Haikus are detected correcty regarless of capitalisaion", "[Haiku]" ) {
+	std::string result;
+    GIVEN( "A Haiku with a mix of capitalisation" ) {
+		Haiku test_haiku("hApPy purple frOg/eAting buGs in the maRSHEs/get indigestIOn");
+		WHEN("Evaulating the Haiku"){
+			result = test_haiku.evaluate_haiku();
+			THEN("The output confirms a Haiku"){
+				REQUIRE(result == "5,7,5,Y");
+			}
+		}
+	}
+}
+
+SCENARIO( "Single sylable lines are correctly evaulated", "[Haiku]" ) {
+	std::string result;
+    GIVEN( "Three single syllable lines with mutliple vowels" ) {
+		Haiku test_haiku("aeeuuuii/aAAaaAA/OIUOIUOIU");
+		WHEN("Evaulating the lines"){
+			result = test_haiku.evaluate_haiku();
+			THEN("The output confirms 1,1,1,N"){
+				REQUIRE(result == "1,1,1,N");
+			}
+		}
+	}
+}
+
 TEST_CASE("Readme Haiku 1", "[Haiku]") {
 	std::string result;
 	Haiku test_haiku("Computer programs/The bugs try to eat my code/I must not let them");
