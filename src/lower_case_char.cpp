@@ -19,10 +19,10 @@ bool Lower_case_char::is_a_vowel()
 {
 	unsigned int i;
 	bool is_a_vowel = false;
-	for(i=0;i<sizeof(Lower_case_char::vowels) &&
+	for(i=0;i<sizeof(vowels) &&
 	        is_a_vowel == false;i++)
 	{
-		if(charactor == Lower_case_char::vowels[i])
+		if(charactor == vowels[i])
 		{
 			is_a_vowel = true;
 		}

@@ -1,6 +1,8 @@
 #ifndef LOWER_CASE_CHAR_HPP
 #define LOWER_CASE_CHAR_HPP
 
+const char vowels[6] = {'a','e','i','o','u','y'};
+
 class Lower_case_char{
 	public:
         Lower_case_char(char c);
@@ -8,6 +10,5 @@ class Lower_case_char{
         bool is_a_vowel(void);
 	private:
         char charactor;
-		char vowels[6] = {'a','e','i','o','u','y'};
 };
 #endif
