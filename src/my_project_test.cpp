@@ -1,4 +1,3 @@
-#define CATCH_CONFIG_MAIN
 #include "catch.hpp"
 #include <iostream>
 #include "../include/lower_case_char.hpp"
